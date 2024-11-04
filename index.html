@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стих о любви</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff69b4;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: brightness(50%);
+            z-index: -1;
+        }
+        .poem {
+            position: relative;
+            text-align: center;
+            max-width: 90%;
+            font-size: 2em;
+            padding: 20px;
+            line-height: 1.5;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        /* Адаптация для мобильных устройств */
+        @media (max-width: 768px) {
+            .poem {
+                font-size: 1.5em;
+                padding: 15px;
+                line-height: 1.4;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .poem {
+                font-size: 1.2em;
+                padding: 10px;
+                line-height: 1.3;
+            }
+        }
+    </style>
+</head>
+<body onclick="playMusic()">
+    <div class="background"></div>
+    <div class="poem">
+        <p>Мой нежный свет, мой сон и вдохновение,<br>
+        Тобой живу, тобой весь мир согрет.<br>
+        Твои глаза — моё одно спасение,<br>
+        Мой ясный свет, любимый силуэт.</p>
+        <p>Мечта моя, что стала вдруг реальностью,<br>
+        Ты счастьем стала, где был серый день.<br>
+        В тебе я вижу жизнь без крайностей,<br>
+        С тобой лишь свет, спокойствие и тень.</p>
+    </div>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="FAKE-LOVE-Bangtan-Boys.mp3" type="audio/mp3">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <script>
+        function playMusic() {
+            document.getElementById('backgroundMusic').play();
+        }
+    </script>
+</body>
+</html>
