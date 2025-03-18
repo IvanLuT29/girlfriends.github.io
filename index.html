@@ -3,70 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Для Наталії</title>
+    <title>Признання в коханні Кристині</title>
     <style>
         body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: "Arial", sans-serif;
-            color: white;
+            height: 100%;
+            background: url('flowers.jpg') no-repeat center center fixed;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            height: 100vh;
-            background: url('./roses.jpg') no-repeat center center/cover;
         }
 
-        .content {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            max-width: 90%;
-            box-sizing: border-box;
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
         }
 
         h1 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: pink;
+            font-size: 2.5em;
+            color: #e91e63;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.2em;
+            color: #333;
             line-height: 1.6;
-            color: pink;
         }
 
-        @media (max-width: 480px) {
+        .question {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #c2185b;
+        }
+
+        /* Мобильная оптимизация */
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                padding: 15px;
+            }
             h1 {
-                font-size: 1.8rem;
+                font-size: 1.8em;
             }
-
             p {
-                font-size: 1rem;
+                font-size: 1em;
             }
-
-            .content {
-                padding: 10px;
+            button {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Наталії</h1>
-        <p>
-            Тисячі троянд – це лише початок,<br>
-            Адже навіть вони не можуть розказати,<br>
-            Як глибока моя любов до тебе,<br>
-            Як безмежно ти прикрашаєш небо.<br>
-        </p>
-        <p>
-            Кожна пелюстка шепоче твоє ім'я,<br>
-            І серце моє належить лише тобі.<br>
-        </p>
+
+    <div class="container">
+        <h1>Кристина, я хочу сказати тобі...</h1>
+        <p>Кристина, ти — як світлий день,  
+        Твоя усмішка — як весна.  
+        В очах твоїх вогонь огнів,  
+        Твої слова — весняний сміх.</p>
+        <p>Ти як веселий, яскравий світ,  
+        Тепло приносиш у холодний світ.  
+        Ти — як зірка, що світить у небі,  
+        Твоя душа — безмежно хвилююча.</p>
+
+        <p>Кристина, ти — як світлий шлях,  
+        Твоя любов — як ясний світ.  
+        З тобою хочеться літати,  
+        Ти — мій світ, мій сенс, мій світло!</p>
+
+        <p class="question">Кристина, чи погодишся ти стати моєю дівчиною?</p>
+
+        <button onclick="alert('Я так радий, що ти погодилася! 💖')">Так, я згодна!</button>
+        <button onclick="alert('Пічалька 😢')">Ні, на жаль.</button>
     </div>
+
 </body>
 </html>
